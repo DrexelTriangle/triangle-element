@@ -59,6 +59,18 @@ export const Footer = (props: {menu: Array<FC>}) => {
 				// Display error message if menu "footer" has not been defined within WordPress
 				echo 'Menu "footer" is not defined!</br>';
 		?> */}
+		<nav className="footer-nav-container"><ul id="menu-footer-menu" className="footer-nav-links"><li id="menu-item-43823" className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43823"><a href="https://www.thetriangle.org" aria-current="page">Home</a></li>
+<li id="menu-item-43824" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43824"><a href="https://www.thetriangle.org/news/">News</a></li>
+<li id="menu-item-43826" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43826"><a href="https://www.thetriangle.org/opinion/">Opinion</a></li>
+<li id="menu-item-43827" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43827"><a href="https://www.thetriangle.org/entertainment/">A&amp;E</a></li>
+<li id="menu-item-43825" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43825"><a href="https://www.thetriangle.org/sports/">Sports</a></li>
+<li id="menu-item-46975" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-46975"><a href="https://www.thetriangle.org/donate/">Donate</a></li>
+<li id="menu-item-47" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://www.thetriangle.org/about/">About</a></li>
+<li id="menu-item-43828" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-43828"><a href="https://www.thetriangle.org/staff/">Staff</a></li>
+<li id="menu-item-43829" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-43829"><a href="https://www.thetriangle.org/classifieds/">Classifieds</a></li>
+<li id="menu-item-43830" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-43830"><a href="https://www.thetriangle.org/join-the-triangle/">Join</a></li>
+<li id="menu-item-44" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="https://www.thetriangle.org/contact/">Contact</a></li>
+</ul></nav>
 	</div>
 	
 	<div className="footer-copyright">
