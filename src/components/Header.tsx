@@ -1,3 +1,5 @@
+import LogoImg from "../assets/logo-white.svg";
+
 export const Header = (_props: {}) => {
     return (
 		<header id="header-global" className="header-global text-red" role="banner">
@@ -15,7 +17,7 @@ export const Header = (_props: {}) => {
 			<div className="header-logo">
 				<div className="header-logo-desktop">
 					<a id="triangle-logo" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri() . '//images/logo-white.svg'; ?>"></img>
+						<img src={LogoImg}></img>
 					</a>
 				</div>
 				<a id="menu-notif" style={{color: 'white', fontSize: '12px', right: '60px', position: 'absolute'}}>Menu</a>
