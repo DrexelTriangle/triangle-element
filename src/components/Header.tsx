@@ -3,7 +3,6 @@ import LogoImg from "../assets/logo-white.svg";
 export const Header = (_props: {}) => {
     return (
 		<header id="header-global" className="header-global text-red" role="banner">
-			Hiiii
 			<div id="header-search-icon" className="header-search-icon white">
 				<i className="material-icons md-36">search</i>
 			</div>
