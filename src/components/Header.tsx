@@ -9,7 +9,7 @@ export const Header = (_props: {}) => {
 			</div>
 	
 			<div className="search-container">
-				/* todo: figure out how to search in react */
+				{/* todo: figure out how to search in react */}
 				<form role="search" method="get" className="search-form" action="<?php echo get_site_url(); ?>">
 					<input id="searchbox-main" type="search" className="search-textbox" placeholder="Search..." value="" name="s"></input>
 				</form>

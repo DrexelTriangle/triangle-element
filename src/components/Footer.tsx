@@ -74,7 +74,7 @@ export const Footer = (props: {menu: Array<FC>}) => {
 	</div>
 	
 	<div className="footer-copyright">
-		©{new Date().getFullYear()} The Triangle. All rights are reserved, except where otherwise noted
+		©{new Date().getFullYear()} The Triangle. All rights are reserved, except where otherwise noted.
 	</div>
 	
 	<div className="footer-disclaimer">
