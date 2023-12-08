@@ -1,8 +1,10 @@
+import LogoImg from "../assets/logo-black.svg";
+
 export const HeaderFrontPage = (_props: {}) => {
     return (
         <header id="header-frontpage" className="frontpage-header">
             <div className="frontpage-logo">
-                <img src="<?php echo get_template_directory_uri() . '/images/logo-black.svg'; ?>"></img>
+                <img src={LogoImg}></img>
             </div>
             <nav>
                 <div className="menu-main-menu-container">

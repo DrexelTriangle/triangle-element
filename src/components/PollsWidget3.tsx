@@ -28,7 +28,5 @@ export const PollsWidget3 = (_props: {}) => {
                 </ul>
             </div>
         </div>
-    
-    
     );
 }
