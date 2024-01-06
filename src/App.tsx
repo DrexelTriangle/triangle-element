@@ -4,7 +4,7 @@ import { Header } from './components/Header.tsx';
 import "../TriangleX/style.css"
 
 function App() {
-  return <body><Header></Header><Footer></Footer></body>
+  return <body><Header/><Footer menu={[]}/></body>
 }
 
 export default App
