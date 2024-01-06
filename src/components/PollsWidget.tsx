@@ -1,11 +1,11 @@
-export const PollsWidget3 = (_props: {}) => {
+export const PollsWidget = (_props: {}) => {
     return (
-        <div id="polls-widget-3" className="sidebar-item widget_polls-widget">
+        <div className="sidebar-item widget_polls-widget">
             <div className="sidebar-title">Weekly Poll</div>
-            <div id="polls-173" className="wp-polls"></div>
+            <div className="wp-polls"></div>
             <h1>Lorem ipsum dolor sit amet?</h1>
 
-            <div id="polls-173-ans" className="wp-polls-ans">
+            <div className="wp-polls-ans">
                 <ul className="wp-polls-ul">
                     <li><strong>Consectetur <small>(40%)</small></strong>
                         <div className="pollbar" style = {{"width": "40%"}} title="Saxbys (40%)"></div>

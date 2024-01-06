@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { PollsWidget3 } from './PollsWidget3';
+import { SocialWidget } from '../components/SocialWidget';
 
 const meta = {
-  title: 'Components/PollsWidget3',
-  component: PollsWidget3,
+  title: 'Components/SocialWidget',
+  component: SocialWidget,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof PollsWidget3>;
+} satisfies Meta<typeof SocialWidget>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
