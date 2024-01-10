@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { HeaderFrontPage } from './HeaderFrontPage';
+import { HeaderFrontPage } from '../components/HeaderFrontPage';
 
 const meta = {
   title: 'Components/HeaderFrontPage',

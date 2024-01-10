@@ -461,9 +461,10 @@ body {
   height: 100%;
   padding-left: 35px;
   padding-top: 5px; }
-  .footer-social i {
-    color: white;
-    margin-left: 20px; }
+
+.footer-social i {
+  color: white;
+}
 
 .footer-tagline {
   font-family: Roboto Slab, Helvetica, Arial, sans-serif;
