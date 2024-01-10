@@ -65,17 +65,17 @@ export const Footer = () => {
 			
 			<nav className="my-[35px] text-center">
 				<ul className="flex justify-center">
-					<FooterLink href="https://www.thetriangle.org" current={true}>Home</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/news/">News</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/opinion/">Opinion</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/entertainment/">A&amp;E</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/sports/">Sports</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/donate/">Donate</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/about/">About</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/staff/">Staff</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/classifieds/">Classifieds</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/join-the-triangle/">Join</FooterLink>
-					<FooterLink href="https://www.thetriangle.org/contact/" last={true}>Contact</FooterLink>
+					<FooterLink href="/" current={true}>Home</FooterLink>
+					<FooterLink href="/news/">News</FooterLink>
+					<FooterLink href="/opinion/">Opinion</FooterLink>
+					<FooterLink href="/entertainment/">A&amp;E</FooterLink>
+					<FooterLink href="/sports/">Sports</FooterLink>
+					<FooterLink href="/donate/">Donate</FooterLink>
+					<FooterLink href="/about/">About</FooterLink>
+					<FooterLink href="/staff/">Staff</FooterLink>
+					<FooterLink href="/classifieds/">Classifieds</FooterLink>
+					<FooterLink href="/join-the-triangle/">Join</FooterLink>
+					<FooterLink href="/contact/" last={true}>Contact</FooterLink>
 				</ul>
 			</nav>
 		</div>
