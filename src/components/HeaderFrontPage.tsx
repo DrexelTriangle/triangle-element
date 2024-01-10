@@ -3,7 +3,7 @@ import LogoImg from "../assets/logo-black.svg";
 export const HeaderFrontPage = (_props: {}) => {
     return (
         <header id="header-frontpage" className="frontpage-header">
-            <div className="frontpage-logo">
+            <div className="frontpage-logo flex justify-center">
                 <img src={LogoImg}></img>
             </div>
             <nav>
