@@ -16,7 +16,8 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Roboto Slab', 'Helvetica', 'Arial', 'sans-serif']
+        heading: ['Roboto Slab', 'Helvetica', 'Arial', 'sans-serif'],
+        title: ['Playfair Display', 'serif']
       }
     }
   },
