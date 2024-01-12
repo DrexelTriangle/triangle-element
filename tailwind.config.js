@@ -3,7 +3,7 @@
 const colors = require('tailwindcss/colors')
 
 export default {
-  content: ["./src/**/*.{html,js,ts,tsx}"],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     colors:{
       primary: '#055C9D',
