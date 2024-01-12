@@ -1,8 +1,10 @@
+import LogoImg from "../assets/logo-black.svg";
+
 export const HeaderFrontPage = (_props: {}) => {
     return (
-        <header id="header-frontpage" className="frontpage-header">
-            <div className="frontpage-logo">
-                <img src="<?php echo get_template_directory_uri() . '/images/logo-black.svg'; ?>"></img>
+        <header id="header-frontpage" className="py-5 frontpage-header">
+            <div className="frontpage-logo flex justify-center">
+                <img src={LogoImg}></img>
             </div>
             <nav>
                 <div className="menu-main-menu-container">
