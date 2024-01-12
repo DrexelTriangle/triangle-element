@@ -55,7 +55,7 @@ export const Features = () => {
   }
 
   return <div className="mb-12">
-    <section id="section-news" class="flex fp-2x3-feature">
+    <section id="section-news" className="flex fp-2x3-feature">
       <div className="basis-1/5"></div>
       <div className="basis-1/2">
         <MainArticle {...mainProps}/>
