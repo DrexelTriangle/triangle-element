@@ -1,6 +1,109 @@
 import {MainArticle} from '../components/MainArticle.tsx'
 
 const item = {
+         "versioncreated": "2023-11-17T01:11:03+0000",
+         "source": ".",
+         "charcount": 0,
+         "firstcreated": "2023-11-14T17:44:52+0000",
+         "readtime": 0,
+         "byline": "Matthew Lacy",
+         "pubstatus": "usable",
+         "_links": {"self":          {
+            "href": "items/urn:newsml:desk.thetriangle.org:2023-11-14T12:44:52.833521:a6348c23-d9a6-4294-89cb-b53adf9c119f",
+            "title": "Item"
+         }},
+         "version": "5",
+         "usageterms": "",
+         "language": "en",
+         "genre": [         {
+            "code": "Article",
+            "name": "Article (news)"
+         }],
+         "type": "text",
+         "headline": "stupid cat",
+         "service": [         {
+            "code": "comic",
+            "name": "Comic"
+         }],
+         "profile": "Comic",
+         "copyrightnotice": "Copyright 2019 The Triangle. All rights reserved.",
+         "wordcount": 0,
+         "_type": "items",
+         "copyrightholder": "The Triangle",
+         "priority": 5,
+         "body_html": "",
+         "uri": "https://desk.thetriangle.org/contentapi/items/urn%3Anewsml%3Adesk.thetriangle.org%3A2023-11-14T12%3A44%3A52.833521%3Aa6348c23-d9a6-4294-89cb-b53adf9c119f",
+         "associations": {"featuremedia":          {
+            "urgency": 3,
+            "source": "Superdesk",
+            "service": [            {
+               "code": "comic",
+               "name": "Comic"
+            }],
+            "firstcreated": "2023-11-14T17:45:45+0000",
+            "guid": "tag:desk.thetriangle.org:2023:4eb76a28-1c05-4da2-a4db-0abfe17cf464",
+            "copyrightholder": "The Triangle",
+            "pubstatus": "usable",
+            "mimetype": "image/png",
+            "version": "2",
+            "usageterms": "",
+            "language": "en",
+            "versioncreated": "2023-11-14T17:45:49+0000",
+            "genre": [            {
+               "code": "Article",
+               "name": "Article (news)"
+            }],
+            "type": "picture",
+            "headline": ".",
+            "priority": 6,
+            "copyrightnotice": "Copyright 2019 The Triangle. All rights reserved.",
+            "body_text": ".",
+            "products": [            {
+               "code": "5c799f5f3b775007f7412755",
+               "name": "The Triangle"
+            }],
+            "description_text": ".",
+            "renditions":             {
+               "baseImage":                {
+                  "href": "https://desk.thetriangle.org/contentapi/assets/6553b24d3b77501e7c3c9b82.png",
+                  "width": 1400,
+                  "height": 988,
+                  "poi":                   {
+                     "y": 494,
+                     "x": 700
+                  },
+                  "mimetype": "image/png"
+               },
+               "viewImage":                {
+                  "href": "https://desk.thetriangle.org/contentapi/assets/6553b24d3b77501e7c3c9b87.png",
+                  "width": 640,
+                  "height": 451,
+                  "poi":                   {
+                     "y": 225,
+                     "x": 320
+                  },
+                  "mimetype": "image/png"
+               },
+               "original":                {
+                  "href": "https://desk.thetriangle.org/contentapi/assets/6553b2493b77501e7c3c9b68.png",
+                  "width": 8598,
+                  "height": 6071,
+                  "poi":                   {
+                     "y": 3035,
+                     "x": 4299
+                  },
+                  "mimetype": "image/png"
+               }
+            }
+         }},
+         "products": [         {
+            "code": "5c799f5f3b775007f7412755",
+            "name": "The Triangle"
+         }],
+         "firstpublished": "2023-11-17T01:11:03+0000"
+      }
+
+const item2 = {
          "source": ".",
          "versioncreated": "2023-12-08T03:00:16+0000",
          "charcount": 4962,
