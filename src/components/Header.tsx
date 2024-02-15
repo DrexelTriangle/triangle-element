@@ -1,9 +1,8 @@
 import LogoImg from "../assets/logo-white.svg";
 import TriIcon from "../assets/tri-icon.png";
 
-export const Header = (_props: {}) => {
-    return (
-		<header id="header-global" className="header-global text-red" role="banner">
+export const Header = () => {
+    return <header id="header-global" className="header-global" role="banner">
 			<div id="header-search-icon" className="header-search-icon white">
 				<i className="material-icons md-36">search</i>
 			</div>
@@ -31,7 +30,5 @@ export const Header = (_props: {}) => {
 			</div>
 
 			<div id="nav-icon" className="header-hamburger-icon white"><span></span><span></span><span></span></div>
-
-		</header>
-	);
+	</header>;
 }
