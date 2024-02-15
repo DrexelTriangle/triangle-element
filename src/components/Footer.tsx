@@ -29,7 +29,7 @@ const FooterLink: FC = (props: {
 };
 
 export const Footer = () => {
-  return <footer className="border-t-8 border-secondary-400">
+  return <footer className="border-t-8 border-primary">
 		<div className="w-[90%] max-w-[1280px] m-auto">
 			<div className="flex h-[50px]">
 				<div className="flex flex-col justify-center">
