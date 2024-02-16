@@ -68,7 +68,7 @@ export default function ScrollIn(props: ScrollInProps) {
   }, [handlingScrollUpdate, props.scrollInHeight]);
 
   return (
-      <div className="scroll-in fixed top-0 left-0 right-0 z-2" ref={scrollInRef} style={renderStyle}>
+      <div className="scroll-in fixed top-0 left-0 right-0 z-[2]" ref={scrollInRef} style={renderStyle}>
         {props.children}
       </div>
   );
