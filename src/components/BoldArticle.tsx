@@ -21,7 +21,7 @@ export const BoldArticle = (props: {
     />
   </a>
 
-  return <li className={(props.first ? "border-b-[1px] border-neutral-primary-200 " : "") + "pb-4 mb-4"}>
+  return <li className={(props.first ? "border-b-[1px] border-neutral-primary-200 " : "") + "pb-4 mb-4 list-none"}>
     <div className="md:hidden block">{previewImage}</div>
     <a className="font-title leading-tight text-[22px] font-bold" href={props.article.link}>
       {props.article.title}
