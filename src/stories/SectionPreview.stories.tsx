@@ -13,4 +13,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Index: Story = {};
+export const Index: Story = {
+  args: {
+    name: "Opinion",
+    code: "opinion",
+    href: "https://www.thetriangle.org/opinion/",
+    preview: true
+  }
+};
