@@ -1,5 +1,6 @@
 import {MainArticle} from '../components/MainArticle.tsx'
 import {PlainArticle} from '../components/PlainArticle.tsx';
+import {BoldArticle} from '../components/BoldArticle.tsx';
 
 const item = {
          "versioncreated": "2023-11-17T01:11:03+0000",
@@ -158,11 +159,18 @@ export const Features = () => {
     }
   }
 
-  const plainArticles = [mainProps, mainProps, mainProps];
+  const newsArticles = [mainProps, mainProps, mainProps, mainProps, mainProps];
+
+  const boldArticles = newsArticles.slice(0, 2);
+  const plainArticles = newsArticles.slice(2, 5);
 
   return <div className="mb-12">
-    <section id="section-news" class="flex fp-2x3-feature">
-      <div className="basis-1/5"></div>
+    <section id="section-news" className="flex fp-2x3-feature">
+      <div className="basis-1/5 pr-4">
+         <ul className="leading-snug">
+            {boldArticles.map((boldArticleProps, i) => <BoldArticle {...boldArticleProps} first={i == 0} key={i}/>)}
+         </ul>
+      </div>
       <div className="basis-[45%]">
         <MainArticle {...mainProps}/>
       </div>
