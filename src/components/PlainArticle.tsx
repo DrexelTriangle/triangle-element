@@ -15,9 +15,8 @@ export const PlainArticle = (props: {
 	}
 	last: boolean
 }) => {
-console.log(props.article)
   return <li className={"mb-4 pb-4 list-none" + (props.last ? "" : " border-b-[1px] border-neutral-primary-200")}>
-    <a className="text-black font-title text-base" href={props.article.link}>
+    <a className="text-black font-title text-base leading-tight" href={props.article.link}>
       {props.article.title}
     </a>
     <div className="mt-3 text-neutral-primary-400 font-heading text-xs leading-3">
