@@ -1,6 +1,6 @@
 import LogoImg from "../assets/logo-black.svg";
 
-export const HeaderFrontPage = (_props: {}) => {
+export const HeaderFrontPage = () => {
     return (
         <header id="header-frontpage" className="py-5 frontpage-header">
             <div className="frontpage-logo flex justify-center">
