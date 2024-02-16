@@ -1,66 +1,21 @@
 import LogoImg from "../assets/logo-black.svg";
+import {SECTIONS} from '../util/constants.ts';
 
 export const HeaderFrontPage = () => {
-    return (
-        <header id="header-frontpage" className="py-5 frontpage-header">
-            <div className="frontpage-logo flex justify-center">
-                <img src={LogoImg}></img>
-            </div>
-            <nav>
-                <div className="menu-main-menu-container">
-                    <ul id="menu-main-menu-1" className="frontpage">
-                        <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40351">
-                            <a href="https://www.thetriangle.org/news/">News</a>
-                        </li>
-                        <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40353">
-                            <a href="https://www.thetriangle.org/opinion/">Opinion</a>
-                        </li>
-                        <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40350">
-                            <a href="https://www.thetriangle.org/entertainment/">Arts &amp; Entertainment</a>
-                        </li>
-                        <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40352">
-                            <a href="https://www.thetriangle.org/sports/">Sports</a>
-                        </li>
-                        <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51695">
-                            <a href="https://www.thetriangle.org/candp/comics/">Comics</a>
-                        </li>
-                        <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50768">
-                            <a href="https://www.thetriangle.org/podcasts/">Podcasts</a>
-                        </li>
-                    </ul>
-                 </div>
-            </nav>
-        </header>
-        // <header id="header-frontpage" className="frontpage-header">
-        //     <div className="frontpage-logo">
-        //         {/* TODO: Center Image */}
-        //         <img src="https://www.thetriangle.org/wp-content/themes/TriangleX/images/logo-black.svg"></img>
-        //     </div>
-        //     <nav>
-        //         {/* TODO: Change Height of Container */}
-        //         <div className="menu-main-menu-container">
-        //             <ul id="menu-main-menu-1" className="frontpage">
-        //                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40351">
-        //                     <a href="https://www.thetriangle.org/news/">News</a>
-        //                 </li>
-        //                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40353">
-        //                     <a href="https://www.thetriangle.org/opinion/">Opinion</a>
-        //                 </li>
-        //                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40350">
-        //                     <a href="https://www.thetriangle.org/entertainment/">Arts &amp; Entertainment</a>
-        //                 </li>
-        //                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40352">
-        //                     <a href="https://www.thetriangle.org/sports/">Sports</a>
-        //                 </li>
-        //                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51695">
-        //                     <a href="https://www.thetriangle.org/candp/comics/">Comics</a>
-        //                 </li>
-        //                 <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50768">
-        //                     <a href="https://www.thetriangle.org/podcasts/">Podcasts</a>
-        //                 </li>
-        //             </ul>
-        //         </div>
-        //     </nav>
-        // </header>
-    );
+    return <header id="header-frontpage" className="py-5">
+        <div className="flex justify-center">
+            <img src={LogoImg} className="w-[98%] max-w-[800px]"></img>
+        </div>
+        <nav>
+            <ul id="menu-main-menu-1" className="border-b-[1px] border-t-2 mt-4 border-black flex items-stretch">
+                {SECTIONS.map( (section, i) => <li key={i} className="flex-1 font-heading text-sm">
+                    <a href={section.href}
+                        className="inline-block w-full h-6 py-4 text-center hover:border-0 hover:bg-neutral-primary-200"
+                    >
+                        {section.name}
+                    </a>
+                </li>) }
+            </ul>
+        </nav>
+    </header>;
 }
