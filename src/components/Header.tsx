@@ -1,5 +1,5 @@
 import LogoImg from "../assets/logo-white.svg";
-import TriIcon from "../assets/tri-icon.png";
+import TriT from "../assets/tri-T.png";
 
 export const Header = () => {
   return <header id="header-global" className="bg-primary flex overflow-hidden w-full h-14" role="banner">
@@ -14,19 +14,15 @@ export const Header = () => {
 			</form>
 		</div>
 
-		<div className="header-logo">
-			<div className="header-logo-desktop">
-				<a id="triangle-logo" href="/" rel="home">
-					<img src={LogoImg}></img>
-				</a>
-			</div>
-			<a id="menu-notif" style={{color: 'white', fontSize: '12px', right: '60px', position: 'absolute'}}>Menu</a>
+		<div className="flex-1 h-14 md:flex hidden flex-col h-14 justify-center items-center">
+			<a id="triangle-logo" className="w-fit" href="/" rel="home">
+				<img src={LogoImg} className="h-10" />
+			</a>
+			{/*<a id="menu-notif" style={{color: 'white', fontSize: '12px', right: '60px', position: 'absolute'}}>Menu</a>*/}
 		</div>
 
-		<div className="header-logo-mobile">
-			<div className="img-container">
-				<a href="/" rel="home"><img id="logo-mobile" src={TriIcon}></img></a>
-			</div>
+		<div className="flex-1 h-14 md:hidden flex items-center justify-center h-full">
+			<a href="/" rel="home"><img id="logo-mobile" className="h-11" src={TriT}></img></a>
 		</div>
 
 		<div id="nav-icon" className="header-hamburger-icon white"><span></span><span></span><span></span></div>
