@@ -55,3 +55,9 @@ export const LINKS = [
     href: "https://www.thetriangle.org/classifieds/"
   },
 ];
+
+export const DATE_FORMATTER = Intl.DateTimeFormat(undefined, {
+  day: "numeric",
+  month: "short",
+  year: "numeric"
+});

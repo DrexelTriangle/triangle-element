@@ -1,3 +1,5 @@
+import {DATE_FORMATTER} from '../util/constants.ts';
+
 export const MainArticle = (props: {
 	article: {
 		postID?: string,
@@ -17,8 +19,14 @@ export const MainArticle = (props: {
 		<a className="text-black text-[42px] leading-tight font-title"
 			href={props.article.link}>{props.article.title}</a>
 		<div className="text-xs font-heading">Featured this week in {props.article.category}</div>
-		<div className="text-slate-500 text-xs leading-none font-heading">
-			By {props.article.author}  | {props.article.date.toDateString()}</div>
+		<div className="text-neutral-primary-400 text-xs leading-none font-heading">
+			By <a
+        href="https://www.thetriangle.org/author/julia-conley-kasey-shamis-and-taylor-clark/"
+        title={"Posts by " + props.article.author}
+        className="uppercase" rel="author"
+      >
+        {props.article.author}
+      </a>  | {DATE_FORMATTER.format(props.article.date)}</div>
 		<p className="line-clamp-2" dangerouslySetInnerHTML={{__html: props.article.preview}}></p>
 	</div>;
 }
