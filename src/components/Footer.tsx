@@ -1,5 +1,6 @@
 import { FC, CSSProperties } from "react";
 import MastheadImg from "../assets/logo-black.svg";
+import { SECTIONS, LINKS } from '../util/constants.ts';
 
 const SocialIcon: FC = (props: {
 	href: string,
@@ -48,7 +49,7 @@ export const Footer = () => {
 					<SocialIcon
 						href="https://www.instagram.com/drexeltriangle/"
 						bgColor="transparent" icon="fa-instagram"
-						bgStyle={{"background-clip": "text", "-webkit-background-clip": "text", "background-image": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"}} />
+						bgStyle={{backgroundClip: "text", WebkitBackgroundClip: "text", backgroundImage: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"}} />
 					<SocialIcon
 						href="https://www.youtube.com/user/DrexelTriangle"
 						bgColor="#e52d27" icon="fa-youtube-play" />
@@ -66,16 +67,8 @@ export const Footer = () => {
 			<nav className="my-[35px] text-center">
 				<ul className="flex justify-center">
 					<FooterLink href="/" current={true}>Home</FooterLink>
-					<FooterLink href="/news/">News</FooterLink>
-					<FooterLink href="/opinion/">Opinion</FooterLink>
-					<FooterLink href="/entertainment/">A&amp;E</FooterLink>
-					<FooterLink href="/sports/">Sports</FooterLink>
-					<FooterLink href="/donate/">Donate</FooterLink>
-					<FooterLink href="/about/">About</FooterLink>
-					<FooterLink href="/staff/">Staff</FooterLink>
-					<FooterLink href="/classifieds/">Classifieds</FooterLink>
-					<FooterLink href="/join-the-triangle/">Join</FooterLink>
-					<FooterLink href="/contact/" last={true}>Contact</FooterLink>
+					{SECTIONS.map((section) => <FooterLink href={section.href} key={section.name}>{section.name}</FooterLink>)}
+					{LINKS.map((link, i) => <FooterLink href={link.href} last={i == LINKS.length-1} key={link.name}>{link.name}</FooterLink>)}
 				</ul>
 			</nav>
 		</div>

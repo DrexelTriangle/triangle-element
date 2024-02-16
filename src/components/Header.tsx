@@ -2,27 +2,44 @@ import LogoImg from "../assets/logo-white.svg";
 import TriT from "../assets/tri-T.png";
 import { HamburgerIcon } from './HeaderMenu.tsx'
 
-type HeaderProps = { menuOpen: boolean, setMenuOpen: (boolean) => void }
+type SearchIconProps = {
+	open: boolean,
+	setOpen: (boolean) => void,
+	color?: string,
+	className?: string
+}
+export const SearchIcon = (props: SearchIconProps) => {
+	return <div
+		id="header-search-icon"
+		className={`cursor-pointer h-14 w-[60px] z-[1] text-center text-${props.color || "white"} ${props.className || ""}`}
+		style={{
+			transition: "0.4s ease-in-out",
+			MozTransition: "0.4s ease-in-out",
+			msTransition: "0.4s ease-in-out",
+			OTransition: "0.4s ease-in-out",
+			WebkitTransition: "0.4s ease-in-out"
+		}}
+		onClick={() => props.setOpen(!props.open)}
+	>
+		<i className="material-icons md-36">search</i>
+	</div>
+}
+
+type HeaderProps = {
+	menuOpen: boolean,
+	setMenuOpen: (boolean) => void,
+	searchOpen: boolean,
+	setSearchOpen: (boolean) => void
+}
 export const Header = (props: HeaderProps) => {
   return <header id="header-global" className="bg-primary flex w-full h-14" role="banner">
-		<div
-			id="header-search-icon"
-			className="cursor-pointer h-14 w-[60px] z-[1] text-center text-white"
-			style={{
-				transition: "0.4s ease-in-out",
-				MozTransition: "0.4s ease-in-out",
-				msTransition: "0.4s ease-in-out",
-				OTransition: "0.4s ease-in-out",
-				WebkitTransition: "0.4s ease-in-out"
-			}}
-		>
-			<i className="material-icons md-36">search</i>
-		</div>
+		<SearchIcon open={props.searchOpen} setOpen={props.setSearchOpen} />
 
 		<div className="search-container">
 			{/* todo: figure out how to search in react */}
-			<form role="search" method="get" className="search-form" action="<?php echo get_site_url(); ?>">
-				<input id="searchbox-main" type="search" className="search-textbox" placeholder="Search..." value="" name="s"></input>
+			<form role="search" method="get" className="search-form" action="/">
+				<input id="searchbox-main" type="search" className="search-textbox"
+				placeholder="Search..." value="" name="s" style={props.searchOpen ? {display: "inline-block", width: "117%"} : {}}/>
 			</form>
 		</div>
 
