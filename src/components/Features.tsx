@@ -1,4 +1,5 @@
 import {MainArticle} from '../components/MainArticle.tsx'
+import {PlainArticle} from '../components/PlainArticle.tsx';
 
 const item = {
          "versioncreated": "2023-11-17T01:11:03+0000",
@@ -157,13 +158,19 @@ export const Features = () => {
     }
   }
 
+  const plainArticles = [mainProps, mainProps, mainProps];
+
   return <div className="mb-12">
     <section id="section-news" class="flex fp-2x3-feature">
       <div className="basis-1/5"></div>
-      <div className="basis-1/2">
+      <div className="basis-[45%]">
         <MainArticle {...mainProps}/>
       </div>
-      <div className="flex-1"></div>
+      <div className="flex-1 pl-4">
+        <ul className="m-0 p-0">
+          {plainArticles.map((plainArticleProps, i) => <PlainArticle {...plainArticleProps} last={i == plainArticles.length-1} key={i} />)}
+        </ul>
+      </div>
     </section>
   </div>
 }
