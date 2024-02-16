@@ -9,6 +9,7 @@ import { HamburgerIcon, HeaderMenu } from './components/HeaderMenu.tsx';
 import { SectionPreview } from './components/SectionPreview.tsx';
 import { SocialWidget } from './components/SocialWidget.tsx';
 import { PollsWidget } from './components/PollsWidget.tsx';
+import { SECTIONS } from './util/constants.ts';
 import "../TriangleX/style.css"
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Features />
       <div id="sections" className="flex">
         <main className="flex-1 pr-5 overflow-hidden">
-          <SectionPreview />
+          {SECTIONS.filter((section) => section.preview).map((section) => <SectionPreview {...section}/>)}
         </main>
         <aside className="basis-[300px] pl-5 border-l-[1px] border-neutral-primary-300">
           <SocialWidget />
