@@ -6,14 +6,14 @@ import { Features } from './components/Features.tsx'
 import "../TriangleX/style.css"
 
 function App() {
-  return <>
+  return <div className="font-content">
     <Header />
     <div className="max-w-[1280px] w-[90%] m-auto">
       <HeaderFrontPage />
       <Features />
     </div>
     <Footer menu={[]}/>
-  </>
+  </div>
 }
 
 export default App
