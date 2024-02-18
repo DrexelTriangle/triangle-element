@@ -57,7 +57,6 @@ export const SectionPreview = (props: SectionPreviewProps) => {
     },
     image: {
       url: "https://www.thetriangle.org/wp-content/uploads/2023/10/Samuel-Gregg-17-2048x1536.jpg"
-      // url: item.associations?.featuremedia?.renditions?.original?.href
     }
   }
 

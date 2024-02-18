@@ -2,9 +2,21 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { SectionPreview } from '../components/SectionPreview.tsx';
 
+const Container = () => {
+  const args = {
+    name: "Opinion",
+    code: "opinion",
+    href: "https://www.thetriangle.org/opinion/",
+    preview: true
+  }
+  return <div className="max-w-[939px]">
+    <SectionPreview {...args} />
+  </div>
+}
+
 const meta = {
   title: 'Components/SectionPreview',
-  component: SectionPreview,
+  component: Container,
   parameters: {
     layout: 'fullscreen',
   },
@@ -13,11 +25,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Index: Story = {
-  args: {
-    name: "Opinion",
-    code: "opinion",
-    href: "https://www.thetriangle.org/opinion/",
-    preview: true
-  }
-};
+export const Index: Story = {};
