@@ -14,7 +14,7 @@ export const MiniArticle = (props: {
 		url: string
 	}
 }) => {
-  return <li className="p-4 w-[231px]">
+  return <li className="p-4 w-[231px] list-none">
     {props.image ? <a href={props.article.link}>
       <img width="978" height="578" alt="" decoding="async" src={props.image.url}
         className="attachment-post-thumbnail size-post-thumbnail wp-post-image h-[154px] overflow-hidden object-cover"

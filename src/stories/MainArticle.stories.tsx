@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { MainArticle } from '../components/MainArticle';
 
 const meta = {
-  title: 'Components/Main Article',
+  title: 'Components/Features/Main Article',
   component: MainArticle,
   parameters: {
     layout: 'fullscreen',

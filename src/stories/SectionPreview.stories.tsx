@@ -15,7 +15,7 @@ const Container = () => {
 }
 
 const meta = {
-  title: 'Components/SectionPreview',
+  title: 'Components/Section Preview',
   component: Container,
   parameters: {
     layout: 'fullscreen',
