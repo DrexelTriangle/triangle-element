@@ -14,7 +14,7 @@ export const MainArticle = (props: {
 		url: string
 	}
 }) => {
-  return <div className="px-4 border-x border-gray-300 flex flex-col gap-3">
+  return <div className="flex flex-col gap-3 md:px-4 md:m-0 pb-4 mb-4 lg:border-x md:border-r border-b border-gray-300">
 		<a href={props.article.link}><img src={props.image.url} /></a>
 		<a className="text-black text-[42px] leading-tight font-title"
 			href={props.article.link}>{props.article.title}</a>

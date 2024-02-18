@@ -164,21 +164,19 @@ export const Features = () => {
   const boldArticles = newsArticles.slice(0, 2);
   const plainArticles = newsArticles.slice(2, 5);
 
-  return <div className="mb-12">
-    <section id="section-news" className="flex fp-2x3-feature">
-      <div className="basis-1/5 pr-4">
-         <ul className="leading-snug">
-            {boldArticles.map((boldArticleProps, i) => <BoldArticle {...boldArticleProps} first={i == 0} key={i}/>)}
-         </ul>
-      </div>
-      <div className="basis-[45%]">
-        <MainArticle {...mainProps}/>
-      </div>
-      <div className="flex-1 pl-4">
-        <ul className="m-0 p-0">
-          {plainArticles.map((plainArticleProps, i) => <PlainArticle {...plainArticleProps} last={i == plainArticles.length-1} key={i} />)}
-        </ul>
-      </div>
-    </section>
-  </div>
+  return <section id="section-news" className="mb-24 flex md:flex-row flex-col">
+    <div className="basis-1/5 lg:block md:hidden block lg:pr-4">
+      <ul className="leading-snug">
+        {boldArticles.map((boldArticleProps, i) => <BoldArticle {...boldArticleProps} first={i == 0} key={i}/>)}
+      </ul>
+    </div>
+    <div className="lg:basis-[45%] basis-1/2 md:order-[0] -order-1">
+     <MainArticle {...mainProps}/>
+    </div>
+    <div className="flex-1 md:pl-4">
+      <ul className="m-0 p-0">
+        {plainArticles.map((plainArticleProps, i) => <PlainArticle {...plainArticleProps} last={i == plainArticles.length-1} key={i} />)}
+      </ul>
+    </div>
+  </section>
 }

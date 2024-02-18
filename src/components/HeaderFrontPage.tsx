@@ -2,7 +2,7 @@ import LogoImg from "../assets/logo-black.svg";
 import {SECTIONS} from '../util/constants.ts';
 
 export const HeaderFrontPage = () => {
-    return <header id="header-frontpage" className="py-5">
+    return <header id="header-frontpage" className="py-5 md:block hidden">
         <div className="flex justify-center">
             <img src={LogoImg} className="w-[98%] max-w-[800px]"></img>
         </div>

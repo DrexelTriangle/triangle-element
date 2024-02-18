@@ -26,9 +26,9 @@ function App() {
     <div className="max-w-[1280px] w-[90%] m-auto">
       <HeaderFrontPage />
       <Features />
-      <div id="sections" className="flex">
+      <div id="sections" className="flex md:flex-row flex-col mb-12">
         <main className="flex-1 pr-5 overflow-hidden">
-          {SECTIONS.filter((section) => section.preview).map((section) => <SectionPreview {...section}/>)}
+          {SECTIONS.filter((section) => section.preview).map((section, i) => <SectionPreview {...section} key={i}/>)}
         </main>
         <aside className="basis-[300px] pl-5 border-l-[1px] border-neutral-primary-300">
           <SocialWidget />
