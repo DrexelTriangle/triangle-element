@@ -46,7 +46,7 @@ type SectionPreviewProps = {
   href: string
 }
 export const SectionPreview = (props: SectionPreviewProps) => {
-  const mainProps = {
+  const wImgProps = {
     article: {
       title: item.headline,
       link: "https://www.thetriangle.org/news/vigil-for-palestinians-held-at-university-of-pennsylvania/",
@@ -59,9 +59,19 @@ export const SectionPreview = (props: SectionPreviewProps) => {
       url: "https://www.thetriangle.org/wp-content/uploads/2023/10/Samuel-Gregg-17-2048x1536.jpg"
     }
   }
+  const woImgProps = {
+    article: {
+      title: item.headline,
+      link: "https://www.thetriangle.org/news/vigil-for-palestinians-held-at-university-of-pennsylvania/",
+      category: item.service[0].name,
+      author: item.byline,
+      date: new Date(item.versioncreated),
+      preview: item.body_html
+    }
+  }
 
   // get top 5 most recent articles in section using the code passed into props
-  const articles = [mainProps, mainProps, mainProps, mainProps, mainProps, mainProps];
+  const articles = [wImgProps, woImgProps, wImgProps, woImgProps, wImgProps, woImgProps];
 
   return <section id={"section-" + props.code} className="frontpage-category-main">
     <h1 className="mb-4 border-b-[6px] border-primary font-heading text-4xl">
