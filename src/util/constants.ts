@@ -1,27 +1,38 @@
 export const SECTIONS = [
   {
     name: "News",
-    href: "https://www.thetriangle.org/news/"
+    code: "news",
+    href: "https://www.thetriangle.org/news/",
+    preview: false
   },
   {
     name: "Opinion",
-    href: "https://www.thetriangle.org/opinion/"
+    code: "opinion",
+    href: "https://www.thetriangle.org/opinion/",
+    preview: true
   },
   {
     name: "Arts & Entertainment",
-    href: "https://www.thetriangle.org/entertainment/"
+    code: "entertainment",
+    href: "https://www.thetriangle.org/entertainment/",
+    preview: true
   },
   {
     name: "Sports",
-    href: "https://www.thetriangle.org/sports/"
+    code: "sports",
+    href: "https://www.thetriangle.org/sports/",
+    preview: true
   },
   {
     name: "Comics",
-    href: "https://www.thetriangle.org/candp/comics/"
+    code: "comics",
+    href: "https://www.thetriangle.org/candp/comics/",
+    preview: true
   },
   {
     name: "Podcasts",
-    href: "https://www.thetriangle.org/candp/comics/"
+    href: "https://www.thetriangle.org/podcasts/",
+    preview: false
   }
 ];
 
